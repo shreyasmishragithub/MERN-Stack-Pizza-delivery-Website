@@ -41,7 +41,7 @@ export default function Orderslist() {
                     {order.isDelivered ? (
                       <h1>Delivered</h1>
                     ) : (
-                      <button className="btn" onClick={()=>{dispatch(deliverOrder(order._id))}}>Deliver</button>
+                      <button className="btn-success" onClick={()=>{dispatch(deliverOrder(order._id))}}>Deliver</button>
                     )}
                   </td>
                 </tr>
