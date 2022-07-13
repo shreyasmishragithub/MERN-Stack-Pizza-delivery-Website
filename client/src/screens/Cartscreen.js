@@ -32,12 +32,12 @@ export default function Cartscreen() {
   return (
     <div>
       <div className="row justify-content-center p-2" data-aos="fade-down">
-        <div className="col-md-6">
+        <div className="col-md-6" id='carr'>
           <h2 style={{ fontSize: "40px" }}>My Cart</h2>
 
           {cartItems.map((item) => {
             return (
-              <div className="flex-container">
+              <div className="flex-container" >
                 <div className="text-left m-1 w-100">
                   <h1>
                     {item.name} [{item.varient}]
@@ -89,7 +89,7 @@ export default function Cartscreen() {
           })}
         </div>
 
-        <div className="col-md-4 text-right">
+        <div className="col-md-4 text-right" id='cars'>
           <h2 style={{ fontSize: "45px" }}>SubTotal : {subtotal} /-</h2>
           <Checkout subtotal={subtotal} />
         </div>
