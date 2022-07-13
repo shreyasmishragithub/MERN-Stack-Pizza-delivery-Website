@@ -30,10 +30,10 @@ export default function Checkout({ subtotal }) {
           stripeKey=process.env.PUBLISH_KEY
           currency="INR"
         
-          <button className="btn">Pay Now</button>
+          <button className="btn-success">Pay Now</button>
         </StripeCheckout>
       ) : (
-        <button className="btn">Login to Pay</button>
+        <button className="btn-primary">Login to Pay</button>
       )}
     </div>
   );
