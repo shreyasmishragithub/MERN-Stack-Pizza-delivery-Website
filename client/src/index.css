@@ -9,7 +9,14 @@ body , html {
   font-family: 'Montserrat', sans-serif !important;
   overflow-x: hidden !important;
 }
-
+#cars{
+  
+  background-color: white;
+}
+#carr{
+  
+  background-color: white;
+}
 #row1{
   background-image:url("images/backgroun.jpg");
 }
